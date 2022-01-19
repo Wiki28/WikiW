@@ -409,10 +409,10 @@ def prime_about_callback(update, context):
 
     elif query.data == "prime_admin":
         query.message.edit_text(
-            text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, Prime Mega now ready to manage your group."
+            text=f"*๏ Ayo buat grup Anda sedikit efektif sekarang*"
+            "\nSelamat, Prime Mega sekarang siap mengelola grup Anda."
             "\n\n*Admin Tools*"
-            "\nBasic Admin tools help you to protect and powerup your group."
+            "\nAlat Admin dasar membantu Anda melindungi dan memperkuat grup Anda."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
             "\n\n*Greetings*"
             "\nLets set a welcome message to welcome new users coming to your group."

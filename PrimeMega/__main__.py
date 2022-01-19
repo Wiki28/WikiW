@@ -81,22 +81,22 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
- ───「[Prime Mega](https://t.me/PrimeMegaBot)」───
-*Hello {} !*
+ ───「[Wiki W](https://t.me/WikiTapiBot)」───
+*Wah halo ka {} !*
 ────────────────────────
-PrimeMega a powerful group management bot built to help you manage your group!
+Wiki W bot manajemen grup yang kuat yang dibuat untuk membantu Anda mengelola grup Anda!
 ────────────────────
-Hit the /help or tap on button to se available command on me.
+Tekan /help atau ketuk tombol untuk melihat perintah yang tersedia pada saya.
 """
 
 buttons = [
         [
         InlineKeyboardButton(
-            text="➕️ Add Prime Mega to your group ➕️", url="t.me/PrimeMegaBot?startgroup=true"
+            text="➕️ Add Wiki W to your group ➕️", url="t.me/WikiTapiBot?startgroup=true"
         ),
     ],
     [
-        InlineKeyboardButton(text="Support", url="https://t.me/PrimeSupportGroup"
+        InlineKeyboardButton(text="Support", url="https://t.me/ShiroSupport"
         ),
         InlineKeyboardButton(
             text="TryInline", switch_inline_query_current_chat=""
@@ -110,14 +110,14 @@ buttons = [
 
 
 HELP_STRINGS = """
-Click on the button bellow to get description about specifics command."""
+Klik tombol di bawah ini untuk mendapatkan deskripsi tentang perintah spesifik."""
 
-PRIME_IMG = "https://telegra.ph/file/b9fa4e1360d0a872a3cd5.jpg"
+PRIME_IMG = "https://telegra.ph/file/d7aa91777ce4aab760237.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @Bukan_guudlooking \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """Heya, senang mendengar Anda ingin menyumbang!
+ Anda dapat mendukung proyek dengan menghubungi @SadTimeStres \
+ Mendukung tidak selalu finansial! \
+ Mereka yang tidak dapat memberikan dukungan keuangan dipersilakan untuk membantu kami mengembangkan bot di ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -362,15 +362,15 @@ def prime_about_callback(update, context):
     query = update.callback_query
     if query.data == "prime_":
         query.message.edit_text(
-            text="๏ I'm *Prime Mega*, a powerful group management bot built to help you manage your group easily."
-            "\n• I can restrict users."
-            "\n• I can greet users with customizable welcome messages and even set a group's rules."
-            "\n• I have an advanced anti-flood system."
-            "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
-            "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
-            "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_PrimeMega's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for PrimeMega.",
+            text="๏ I'm *Wiki W*, bot manajemen grup yang kuat yang dibuat untuk membantu Anda mengelola grup dengan mudah."
+            "\n• Saya dapat membatasi pengguna."
+            "\n• Saya dapat menyapa pengguna dengan pesan selamat datang yang dapat disesuaikan dan bahkan menetapkan aturan grup."
+            "\n• Saya memiliki sistem anti-banjir yang canggih."
+            "\n• Saya dapat memperingatkan pengguna sampai mereka mencapai peringatan maksimal, dengan setiap tindakan yang telah ditentukan sebelumnya seperti larangan, bisu, tendangan, dll."
+            "\n• Saya memiliki sistem pencatatan, daftar hitam, dan bahkan balasan yang telah ditentukan sebelumnya pada kata kunci tertentu."
+            "\n• Saya memeriksa izin admin sebelum menjalankan perintah apa pun dan lebih banyak barang"
+            "\n\n_Wiki W dilisensikan di bawah Lisensi Publik Umum GNU v3.0_"
+            "\n\n Klik tombol di bawah untuk mendapatkan bantuan dasar untuk Wiki W.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
